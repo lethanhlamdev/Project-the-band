@@ -12,7 +12,6 @@ body {
     margin-top: 16px;
     border: none;
     cursor: pointer;
-    -webkit-appearance: none;
 }
 .btn:hover {
     color: #000;
@@ -112,6 +111,12 @@ body {
 
 /*/-> Slider <--------------------------------------------------/*/
 #slider {
+    background-image: linear-gradient(
+        43deg,
+        #454b65 0%,
+        #482d45 46%,
+        #483611 100%
+    );
     height: calc(100vh - 46px);
     position: relative;
     margin-top: 46px;
@@ -121,6 +126,7 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+    animation: modalFadeIn-Image ease-in-out 3s;
 }
 #slider .text-content-slider {
     position: absolute;
@@ -439,5 +445,16 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes modalFadeIn-Image {
+    from {
+        opacity: 0;
+        transform: translateX(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
