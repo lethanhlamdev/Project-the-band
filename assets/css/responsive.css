@@ -1,0 +1,139 @@
+
+@media (max-width: 63.9375em) {
+    .btn {
+        padding: 12px 20px;
+        font-size: 12px  
+    }
+
+    .map-section img {
+        width: 100%;
+    }
+    
+    #nav .subnav a {
+        padding: 5px 41px;
+    }
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+
+    .contact-form .form-control {
+        padding: 12px;
+    }
+    .contact-info {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+
+    #footer .social-list {
+        font-size: 32px;
+    }
+    #footer .social-list a {
+        margin: 0 8px;
+    }
+    #footer .copyright {
+        font-size: 20px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;    
+        display: inline-block;
+    } 
+}
+@media (max-width: 46.1875em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+    .s-mt-8 {
+        margin-top: 8/px !important;
+    } 
+    .btn {
+        padding: 16px 15px;
+        font-size: 16px;
+        font-weight: 400
+    }
+
+
+    #header .search-btn {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+
+    #header {
+        overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+   }
+
+   #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+    .contact-content {
+        display: block;
+    }
+
+    .form-control {
+        margin-top: 20px !important;
+    }
+
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 100%;
+    }
+    
+    .contact-form {
+        padding: 10px;     
+    }
+
+    .contact-form .form-control {
+        margin-top: 4px;
+        font-size: 16px;
+    }
+
+    #slider .text-slogan { 
+        margin-top: 18px; 
+    }
+
+    #slider .text-content-slider {
+        bottom: 24px;
+    }
+
+    #slider .text-heading { 
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    #slider .text-slogan { 
+        font-size: 14px;
+    }
+
+    #footer {
+        margin-top: 20px;
+    } 
+}
