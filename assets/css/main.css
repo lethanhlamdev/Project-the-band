@@ -1,3 +1,7 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 .btn {
     color: #fff;
@@ -11,7 +15,7 @@
     -webkit-appearance: none;
 }
 .btn:hover {
-    color:#000;
+    color: #000;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -27,12 +31,13 @@
 }
 
 #nav {
- /* Có tính kế thừa của block */
+    /* Có tính kế thừa của block */
     display: inline-block;
 }
 
 #nav .nav-icon {
     font-size: 14px;
+    margin-left: 4px;
 }
 
 #nav li {
@@ -53,8 +58,9 @@
     text-transform: uppercase;
 }
 #nav li:hover {
-    color: #000; 
+    color: #000;
     background-color: #ccc;
+    border-radius: 4px;
 }
 
 #nav .subnav {
@@ -62,36 +68,37 @@
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 200px;   
+    min-width: 200px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 4px;
 }
-#nav li:hover .subnav { 
+#nav li:hover .subnav {
     display: block;
 }
-#nav .subnav a { 
-    height: 36px; 
-    color: #333; 
+#nav .subnav a {
+    height: 36px;
+    color: #333;
 }
- 
 
 .mobile-menu-btn,
 #header .search-btn {
- /* Mất tính kế thừa */
-    float: right;  
+    /* Mất tính kế thừa */
+    float: right;
     padding: 0 21px;
 }
-#header .menu-icon,   
+#header .menu-icon,
 #header .search-icon {
-    color: #fff;  
-    line-height: 46px;   
-    font-size: 20px;}
-#header .search-btn:hover { 
-    color: #fff; 
-    background-color: #ccc; 
-    cursor: pointer;}
+    color: #fff;
+    line-height: 46px;
+    font-size: 20px;
+}
+#header .search-btn:hover {
+    color: #fff;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
 .mobile-menu-btn {
     position: absolute;
     top: 0;
@@ -99,18 +106,21 @@
     display: none;
 }
 #header .mobile-menu-btn:hover {
-    background-color: #ccc; 
-    color: #000; 
+    background-color: #ccc;
+    color: #000;
 }
-
 
 /*/-> Slider <--------------------------------------------------/*/
-#slider { 
-    position: relative; 
+#slider {
+    height: calc(100vh - 46px);
+    position: relative;
     margin-top: 46px;
 }
-.slider-img { 
+.slider-img {
+    height: calc(100vh - 46px);
     width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 #slider .text-content-slider {
     position: absolute;
@@ -118,20 +128,20 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 48px;
-    color: #fff;}
+    color: #fff;
+}
 
-#slider .text-heading { 
+#slider .text-heading {
     font-size: 24px;
     font-weight: 400;
 }
 
-#slider .text-slogan { 
+#slider .text-slogan {
     font-size: 16px;
-    margin-top: 28px; 
+    margin-top: 28px;
     line-height: 1.6;
     text-shadow: 0 0 3px #000;
 }
-
 
 /*/-> Content <--------------------------------------------------/*/
 /*/-> Band365 <-/*/
@@ -144,7 +154,7 @@
 }
 #content .text-heading {
     font-size: 32px;
-    font-weight: 400; 
+    font-weight: 400;
     text-align: center;
     letter-spacing: 4px;
 }
@@ -162,7 +172,6 @@
     line-height: 1.6;
 }
 
-
 #content .members-list {
     margin-top: 16px;
 }
@@ -175,13 +184,12 @@
     border-radius: 4px;
 }
 #contact-form {
-    font-size: 16px
+    font-size: 16px;
 }
-
 
 /*/-> Tour <-/*/
 .tour-section {
-    background-color: #000;  
+    background-color: #000;
 }
 .stickets-list {
     background-color: #fff;
@@ -193,7 +201,7 @@
     font-size: 16px;
     padding: 12px 16px;
     border-bottom: 1px solid #ddd;
-    list-style-type: none;   
+    list-style-type: none;
 }
 .stickets-list .sold-out {
     background-color: #f44336;
@@ -216,7 +224,7 @@
 }
 
 /*/-> Place <-/*/
-.place-list { 
+.place-list {
     margin-top: 16px;
 }
 
@@ -244,7 +252,6 @@
     margin-top: 16px;
     color: #757575;
     font-size: 16px;
-
 }
 .place-disc {
     margin-top: 16px;
@@ -252,7 +259,6 @@
     text-align: justify;
     font-size: 16px;
 }
-
 
 /*/-> Modal<-/*/
 .modal {
@@ -329,7 +335,7 @@
     width: 100%;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 12px; 
+    padding: 12px;
     border-radius: 4px;
 }
 #buy-stickets:hover {
@@ -342,7 +348,7 @@
     text-align: right;
 }
 .modal-footer a {
-    color: #2196F3;
+    color: #2196f3;
 }
 
 /*/-> Contact <-/*/
@@ -363,19 +369,19 @@
 }
 .contact-info a {
     color: #101aef;
-    opacity: 0.8;  
+    opacity: 0.8;
 }
 .contact-info a:hover {
-    opacity: 1;  
+    opacity: 1;
 }
 .contact-form {
     font-size: 16px;
 }
-.contact-form .form-control  {
+.contact-form .form-control {
     padding: 10px;
     border: 1px solid #ccc;
-    width: 100%;  
-    font-size: 15px; 
+    width: 100%;
+    font-size: 15px;
     border-radius: 4px;
     margin-top: 10px;
 }
@@ -395,6 +401,9 @@
     background-color: #000;
 }
 #footer .social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
 }
 #footer .social-list a {
@@ -406,22 +415,29 @@
     color: #757575;
 }
 #footer .copyright {
+    margin-top: 16px;
     font-size: 16px;
     color: #fff;
-} 
+}
 #footer .copyright a {
     color: #fff;
-} 
+}
 
+#footer .link-copyright {
+    text-decoration: none;
+}
+
+#footer .social-list-link {
+    margin: 0 16px;
+}
 
 @keyframes modalFadeIn {
     from {
         opacity: 0;
         transform: translateY(-140px);
-
-    } to {
+    }
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
