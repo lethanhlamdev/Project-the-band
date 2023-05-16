@@ -394,6 +394,22 @@ body {
 .boder-radius-input-4 {
     border-radius: 4px;
 }
+
+.contact-content p a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-content .ti-location-pin,
+.ti-mobile {
+    font-size: 1.2rem;
+}
+
+.contact-fix {
+    display: flex;
+    align-items: center;
+}
+
 /*/-> Img <-/*/
 .map-section img {
     width: 100%;
