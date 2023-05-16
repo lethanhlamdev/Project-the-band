@@ -32,6 +32,7 @@ setInterval(function () {
     }
 }, 5000);
 
+// ------------------------------------------------------------------------------------------------------------------------
 const buyBtns = document.querySelectorAll(".js-buy-ticket");
 const modal = document.querySelector(".js-modal");
 const modalClose = document.querySelector(".js-modal-close");

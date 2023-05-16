@@ -4,8 +4,8 @@ body {
 }
 
 .btn {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
     text-decoration: none;
     padding: 10px 16px;
     display: inline-block;
@@ -14,24 +14,35 @@ body {
     cursor: pointer;
 }
 .btn:hover {
-    color: #000;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    opacity: 0.9;
 }
 
 /* Header */
 #header {
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
-    height: 46px;
-    background-color: #000;
+    padding: 8px;
+    background: #fff;
+}
+
+#header .logo {
+    display: flex;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+#header .logo .logo-image {
+    height: 50px;
 }
 
 #nav {
     /* Có tính kế thừa của block */
-    display: inline-block;
+    display: flex;
+    margin-left: -450px;
 }
 
 #nav .nav-icon {
@@ -53,13 +64,12 @@ body {
     line-height: 46px;
 }
 #nav > li > a {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
-#nav li:hover {
-    color: #000;
-    background-color: #ccc;
+#nav li:hover a {
     border-radius: 4px;
+    text-decoration: underline;
 }
 
 #nav .subnav {
@@ -72,9 +82,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
-#nav li:hover .subnav {
-    display: block;
-}
+
 #nav .subnav a {
     height: 36px;
     color: #333;
@@ -83,17 +91,28 @@ body {
 .mobile-menu-btn,
 #header .search-btn {
     /* Mất tính kế thừa */
-    float: right;
     padding: 0 21px;
 }
+
+#header .search-btn {
+    width: 60px;
+    height: 50px;
+}
+
 #header .menu-icon,
 #header .search-icon {
     color: #fff;
     line-height: 46px;
     font-size: 20px;
 }
+#header .search-icon {
+    display: block;
+    padding-top: 4px;
+    color: #000;
+}
+
 #header .search-btn:hover {
-    color: #fff;
+    display: inline-block;
     background-color: #ccc;
     cursor: pointer;
     border-radius: 4px;
@@ -110,27 +129,36 @@ body {
 }
 
 /*/-> Slider <--------------------------------------------------/*/
-#slider {
-    background-image: linear-gradient(
-        43deg,
-        #454b65 0%,
-        #482d45 46%,
-        #483611 100%
-    );
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: calc(100vh - 46px);
     position: relative;
-    margin-top: 46px;
+    background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+    );
+}
+.img-background {
+    height: calc(100vh - 46px);
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .slider-img {
     height: calc(100vh - 46px);
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    animation: modalFadeIn-Image ease-in-out 3s;
+    animation: modalFadeIn-Image ease 3s;
 }
 #slider .text-content-slider {
     position: absolute;
     text-align: center;
+    justify-content: center;
     left: 50%;
     transform: translateX(-50%);
     bottom: 48px;
@@ -195,7 +223,12 @@ body {
 
 /*/-> Tour <-/*/
 .tour-section {
-    background-color: #000;
+    background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+    );
 }
 .stickets-list {
     background-color: #fff;
@@ -210,7 +243,12 @@ body {
     list-style-type: none;
 }
 .stickets-list .sold-out {
-    background-color: #f44336;
+    background-image: linear-gradient(
+        90deg,
+        #ff9a8b 0%,
+        #ff6a88 55%,
+        #ff99ac 100%
+    );
     color: #fff;
     padding: 4px 4px;
     float: right;
@@ -221,7 +259,7 @@ body {
     float: right;
     width: var(--height);
     height: var(--height);
-    background-color: #000;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -292,7 +330,12 @@ body {
     overflow: hidden;
 }
 .modal-header {
-    background: #009688;
+    background-image: linear-gradient(
+        90deg,
+        #ff9a8b 0%,
+        #ff6a88 55%,
+        #ff99ac 100%
+    );
     height: 128px;
     display: flex;
     align-items: center;
@@ -316,7 +359,7 @@ body {
 .modal-close:hover {
     opacity: 1;
     color: #000;
-    background: #ccc;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 }
 .modal-body {
     padding: 16px;
@@ -335,7 +378,12 @@ body {
     border-radius: 4px;
 }
 #buy-stickets {
-    background: #009688;
+    background-image: linear-gradient(
+        90deg,
+        #ff9a8b 0%,
+        #ff6a88 55%,
+        #ff99ac 100%
+    );
     border: none;
     color: #fff;
     width: 100%;
@@ -354,7 +402,8 @@ body {
     text-align: right;
 }
 .modal-footer a {
-    color: #2196f3;
+    text-decoration: none;
+    color: #000;
 }
 
 /*/-> Contact <-/*/
@@ -374,7 +423,7 @@ body {
     display: inline-block;
 }
 .contact-info a {
-    color: #101aef;
+    color: #000;
     opacity: 0.8;
 }
 .contact-info a:hover {
@@ -419,8 +468,8 @@ body {
 #footer {
     padding: 48px 16px;
     text-align: center;
-    margin-top: 120px;
-    background-color: #000;
+    border-top: #757575 solid 1px;
+    background-color: #fff;
 }
 #footer .social-list {
     display: flex;
@@ -429,7 +478,7 @@ body {
     font-size: 24px;
 }
 #footer .social-list a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 #footer .copyright a:hover,
@@ -439,10 +488,10 @@ body {
 #footer .copyright {
     margin-top: 16px;
     font-size: 16px;
-    color: #fff;
+    color: #000;
 }
 #footer .copyright a {
-    color: #fff;
+    color: #000;
 }
 
 #footer .link-copyright {
@@ -467,7 +516,7 @@ body {
 @keyframes modalFadeIn-Image {
     from {
         opacity: 0;
-        transform: translateX(-140px);
+        transform: translateX(-100px);
     }
     to {
         opacity: 1;

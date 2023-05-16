@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,22 +15,27 @@
         <link rel="stylesheet" href="./assets/css/grid.css" />
     </head>
     <body>
-        <div id="main">
-            <div id="header">
+        <div class="pj">
+            <header id="header">
+                <a class="logo" href="#">
+                    <img
+                        class="logo-image"
+                        src="./assets/img/music-heart.png"
+                        alt=""
+                    />
+                </a>
                 <ul id="nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#band1713">The Band 1713</a></li>
                     <li><a href="#tour">Tour Dates</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
-                        <a href="#"
-                            >Product<i class="nav-icon ti-angle-down"></i
-                        ></a>
-                        <ul class="subnav">
+                        <a href="./headphone/music.html">Listening</a>
+                        <!-- <ul class="subnav">
                             <li><a href="#">Featured products</a></li>
                             <li><a href="#">News Product</a></li>
                             <li><a href="#">Coming Soon</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                 </ul>
                 <div class="search-btn">
@@ -40,236 +45,298 @@
                 <div id="mobile-menu" class="mobile-menu-btn">
                     <i class="menu-icon ti-menu"></i>
                 </div>
-            </div>
+            </header>
+            <div id="main">
+                <div id="slider" class="slider"></div>
 
-            <div id="slider"></div>
-
-            <div id="content">
-                <div id="band1713" class="text-section">
-                    <h2 class="text-heading">THE BAND 1713</h2>
-                    <p class="text-sub-heading">We love music</p>
-                    <p class="text-about">
-                        We have created a fictional band website. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. This place a palace of light drawn
-                        with shade of silence and pretence a token of our trade
-                        and here you and I lie wreathed in flames all over a
-                        life lived by making up new games of gazes and whispers.
-                        I want you to know I still love you even though we've
-                        been dancing on broken glass, parade all your memories,
-                        for the moments we shared never fade away. The best of
-                        intentions will not see the road paved the end of
-                        illusions, who could ever be saved what's left behind in
-                        the storms that we braved the troubles we find and the
-                        chances we waived.
-                    </p>
-
-                    <div class="row members-list text-center">
-                        <div class="col col-third s-col-full mt-32">
-                            <p class="member-name">Duong Yen</p>
-                            <img
-                                src="./assets/img/Duong Yen.jpg"
-                                alt=""
-                                class="member-img"
-                            />
-                        </div>
-
-                        <div class="col col-third s-col-full mt-32">
-                            <p class="member-name">John Basto</p>
-                            <img
-                                src="./assets/img/man.jpg"
-                                alt=""
-                                class="member-img"
-                            />
-                        </div>
-
-                        <div class="col col-third s-col-full mt-32">
-                            <p class="member-name">Michael Dam</p>
-                            <img
-                                src="./assets/img/Michael Dam.jpg"
-                                alt=""
-                                class="member-img"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div id="tour" class="tour-section">
-                    <div class="text-section">
-                        <h2 class="text-heading text-white">TOUR DATES</h2>
-                        <p class="text-sub-heading text-white">
-                            Remember to book your tickets!
+                <div id="content">
+                    <div id="band1713" class="text-section">
+                        <h2 class="text-heading">THE BAND 1713</h2>
+                        <p class="text-sub-heading">We love music</p>
+                        <p class="text-about">
+                            We have created a fictional band website. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. This place
+                            a palace of light drawn with shade of silence and
+                            pretence a token of our trade and here you and I lie
+                            wreathed in flames all over a life lived by making
+                            up new games of gazes and whispers. I want you to
+                            know I still love you even though we've been dancing
+                            on broken glass, parade all your memories, for the
+                            moments we shared never fade away. The best of
+                            intentions will not see the road paved the end of
+                            illusions, who could ever be saved what's left
+                            behind in the storms that we braved the troubles we
+                            find and the chances we waived.
                         </p>
 
-                        <ul class="stickets-list boder-radius-input-4">
-                            <li>
-                                September <span class="sold-out">Sold out</span>
-                            </li>
-                            <li>
-                                November <span class="sold-out">Sold out</span>
-                            </li>
-                            <li>December <span class="quantity">90</span></li>
-                        </ul>
-
-                        <div class="row place-list">
-                            <div
-                                class="palace-list__item col col-third s-col-full mt-16"
-                            >
+                        <div class="row members-list text-center">
+                            <div class="col col-third s-col-full mt-32">
+                                <p class="member-name">Duong Yen</p>
                                 <img
-                                    src="/assets/img/newyork.jpg"
+                                    src="./assets/img/Duong Yen.jpg"
                                     alt=""
-                                    class="palce-img"
+                                    class="member-img"
                                 />
-                                <div class="place-body">
-                                    <h3 class="place-heading">New York</h3>
-                                    <p class="place-time">Fri 27 Nov 2016</p>
-                                    <p class="place-disc">
-                                        Praesent tincidunt sed tellus ut rutrum
-                                        sed vitae justo. We're going where
-                                        dreams really come true.
-                                    </p>
-                                    <button
-                                        class="btn s-full-width js-buy-ticket boder-radius-input-4"
-                                    >
-                                        Buy Tickets
-                                    </button>
-                                </div>
                             </div>
 
-                            <div
-                                class="palace-list__item col col-third s-col-full mt-16"
-                            >
+                            <div class="col col-third s-col-full mt-32">
+                                <p class="member-name">John Basto</p>
                                 <img
-                                    src="/assets/img/paris.jpg"
+                                    src="./assets/img/man.jpg"
                                     alt=""
-                                    class="palce-img"
+                                    class="member-img"
                                 />
-                                <div class="place-body">
-                                    <h3 class="place-heading">Paris</h3>
-                                    <p class="place-time">Sat 28 Nov 2016</p>
-                                    <p class="place-disc">
-                                        Praesent tincidunt sed tellus ut rutrum
-                                        sed vitae justo. We're going where
-                                        dreams really come true.
-                                    </p>
-                                    <button
-                                        class="btn s-full-width js-buy-ticket boder-radius-input-4"
-                                    >
-                                        Buy Tickets
-                                    </button>
-                                </div>
                             </div>
 
-                            <div
-                                class="palace-list__item col col-third s-col-full mt-16"
-                            >
+                            <div class="col col-third s-col-full mt-32">
+                                <p class="member-name">Michael Dam</p>
                                 <img
-                                    src="/assets/img/sanfran.jpg"
+                                    src="./assets/img/Michael Dam.jpg"
                                     alt=""
-                                    class="palce-img"
+                                    class="member-img"
                                 />
-                                <div class="place-body">
-                                    <h3 class="place-heading">San Francisco</h3>
-                                    <p class="place-time">Sun 29 Nov 2016</p>
-                                    <p class="place-disc">
-                                        Praesent tincidunt sed tellus ut rutrum
-                                        sed vitae justo. We're going where
-                                        dreams really come true.
-                                    </p>
-                                    <button
-                                        class="btn s-full-width js-buy-ticket boder-radius-input-4"
-                                    >
-                                        Buy Tickets
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="contact" class="text-section">
-                    <h2 class="text-heading">CONTACT</h2>
-                    <p class="text-sub-heading">Fan? Drop a note!</p>
+                    <div id="tour" class="tour-section">
+                        <div class="text-section">
+                            <h2 class="text-heading text-white">TOUR DATES</h2>
+                            <p class="text-sub-heading text-white">
+                                Remember to book your tickets!
+                            </p>
 
-                    <div class="row contact-content">
-                        <div class="col col-half s-col-full contact-info">
-                            <p class="contact-fix">
-                                <i class="ti-location-pin"></i>Ho Chi Minh, Viet
-                                Nam
-                            </p>
-                            <p class="contact-fix">
-                                <i class="ti-mobile"></i>Phone:
-                                <a href="tel:0987899899">0987899899</a>
-                            </p>
-                            <p class="contact-fix">
-                                <i class="ti-email"></i>Email:
-                                <a href="mailto:Themusicforlife@mail.com"
-                                    >Themusicforlife@mail.com</a
+                            <ul class="stickets-list boder-radius-input-4">
+                                <li>
+                                    September
+                                    <span class="sold-out">Sold out</span>
+                                </li>
+                                <li>
+                                    November
+                                    <span class="sold-out">Sold out</span>
+                                </li>
+                                <li>
+                                    December <span class="quantity">90</span>
+                                </li>
+                            </ul>
+
+                            <div class="row place-list">
+                                <div
+                                    class="palace-list__item col col-third s-col-full mt-16"
                                 >
-                            </p>
-                        </div>
+                                    <img
+                                        src="/assets/img/newyork.jpg"
+                                        alt=""
+                                        class="palce-img"
+                                    />
+                                    <div class="place-body">
+                                        <h3 class="place-heading">New York</h3>
+                                        <p class="place-time">
+                                            Fri 27 Nov 2016
+                                        </p>
+                                        <p class="place-disc">
+                                            Praesent tincidunt sed tellus ut
+                                            rutrum sed vitae justo. We're going
+                                            where dreams really come true.
+                                        </p>
+                                        <button
+                                            class="btn s-full-width js-buy-ticket boder-radius-input-4"
+                                        >
+                                            Buy Tickets
+                                        </button>
+                                    </div>
+                                </div>
 
-                        <div class="col col-half s-col-full contact-form">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col col-half s-col-full s-mt-8">
-                                        <input
-                                            type="text"
-                                            name=""
-                                            placeholder="Name"
-                                            required
-                                            id=""
-                                            class="form-control"
-                                        />
-                                    </div>
-                                    <div class="col col-half s-col-full s-mt-8">
-                                        <input
-                                            type="email"
-                                            name=""
-                                            placeholder="Email"
-                                            required
-                                            id=""
-                                            class="form-control"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="row contact-message mt-8">
-                                    <div class="col col-full">
-                                        <input
-                                            type="text"
-                                            email=""
-                                            placeholder="Massage"
-                                            required
-                                            id=""
-                                            class="form-control"
-                                        />
+                                <div
+                                    class="palace-list__item col col-third s-col-full mt-16"
+                                >
+                                    <img
+                                        src="/assets/img/paris.jpg"
+                                        alt=""
+                                        class="palce-img"
+                                    />
+                                    <div class="place-body">
+                                        <h3 class="place-heading">Paris</h3>
+                                        <p class="place-time">
+                                            Sat 28 Nov 2016
+                                        </p>
+                                        <p class="place-disc">
+                                            Praesent tincidunt sed tellus ut
+                                            rutrum sed vitae justo. We're going
+                                            where dreams really come true.
+                                        </p>
+                                        <button
+                                            class="btn s-full-width js-buy-ticket boder-radius-input-4"
+                                        >
+                                            Buy Tickets
+                                        </button>
                                     </div>
                                 </div>
-                                <input
-                                    class="contact-submit-btn btn pull-right mt-16 s-full-width boder-radius-input-4"
-                                    type="submit"
-                                    value="Send"
-                                />
-                            </form>
+
+                                <div
+                                    class="palace-list__item col col-third s-col-full mt-16"
+                                >
+                                    <img
+                                        src="/assets/img/sanfran.jpg"
+                                        alt=""
+                                        class="palce-img"
+                                    />
+                                    <div class="place-body">
+                                        <h3 class="place-heading">
+                                            San Francisco
+                                        </h3>
+                                        <p class="place-time">
+                                            Sun 29 Nov 2016
+                                        </p>
+                                        <p class="place-disc">
+                                            Praesent tincidunt sed tellus ut
+                                            rutrum sed vitae justo. We're going
+                                            where dreams really come true.
+                                        </p>
+                                        <button
+                                            class="btn s-full-width js-buy-ticket boder-radius-input-4"
+                                        >
+                                            Buy Tickets
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="map-section">
-                    <img src="./assets/img/imgone.jpg" alt="" />
+
+                    <div id="contact" class="text-section">
+                        <h2 class="text-heading">CONTACT</h2>
+                        <p class="text-sub-heading">Fan? Drop a note!</p>
+
+                        <div class="row contact-content">
+                            <div class="col col-half s-col-full contact-info">
+                                <p class="contact-fix">
+                                    <i class="ti-location-pin"></i>Ho Chi Minh,
+                                    Viet Nam
+                                </p>
+                                <p class="contact-fix">
+                                    <i class="ti-mobile"></i>Phone:
+                                    <a href="tel:0987899899">0987899899</a>
+                                </p>
+                                <p class="contact-fix">
+                                    <i class="ti-email"></i>Email:
+                                    <a href="mailto:Themusicforlife@mail.com"
+                                        >Themusicforlife@mail.com</a
+                                    >
+                                </p>
+                            </div>
+
+                            <div class="col col-half s-col-full contact-form">
+                                <form action="">
+                                    <div class="row">
+                                        <div
+                                            class="col col-half s-col-full s-mt-8"
+                                        >
+                                            <input
+                                                type="text"
+                                                name=""
+                                                placeholder="Name"
+                                                required
+                                                id=""
+                                                class="form-control"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col col-half s-col-full s-mt-8"
+                                        >
+                                            <input
+                                                type="email"
+                                                name=""
+                                                placeholder="Email"
+                                                required
+                                                id=""
+                                                class="form-control"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="row contact-message mt-8">
+                                        <div class="col col-full">
+                                            <input
+                                                type="text"
+                                                email=""
+                                                placeholder="Massage"
+                                                required
+                                                id=""
+                                                class="form-control"
+                                            />
+                                        </div>
+                                    </div>
+                                    <input
+                                        class="contact-submit-btn btn pull-right mt-16 s-full-width boder-radius-input-4"
+                                        type="submit"
+                                        value="Send"
+                                    />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-section">
+                        <img src="./assets/img/map.jpg" alt="" />
+                    </div>
                 </div>
             </div>
+            <div id="modal-box">
+                <div class="modal js-modal">
+                    <div class="modal-container js-modal-container">
+                        <div class="modal-close js-modal-close">
+                            <i class="ti-close"></i>
+                        </div>
+                        <header class="modal-header">
+                            <i class="modal-heading-icon ti-bag"></i>
+                            Tickets
+                        </header>
 
+                        <div class="modal-body">
+                            <label for="ticket-quantity" class="modal-label">
+                                <i class="ti-shopping-cart"></i>
+                                Tickets, $15 per person
+                            </label>
+                            <input
+                                id="ticket-quantity"
+                                type="text"
+                                class="modal-input"
+                                placeholder="How many ?"
+                            />
+
+                            <label for="ticket-email" class="modal-label">
+                                <i class="ti-user"></i>
+                                Send to
+                            </label>
+                            <input
+                                id="ticket-email"
+                                type="email"
+                                class="modal-input"
+                                placeholder="Enter email"
+                            />
+
+                            <button id="buy-stickets">
+                                Pay
+                                <i class="ti-check"></i>
+                            </button>
+                        </div>
+                        <footer class="modal-footer">
+                            <p class="modal-help">Need <a href="#">help?</a></p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
             <div id="footer">
                 <div class="social-list">
                     <a href="#!"
@@ -292,51 +359,6 @@
                 <p class="copyright">
                     Powered by <a class="link-copyright" href="#!">why.css</a>
                 </p>
-            </div>
-        </div>
-        <div id="modal-box">
-            <div class="modal js-modal">
-                <div class="modal-container js-modal-container">
-                    <div class="modal-close js-modal-close">
-                        <i class="ti-close"></i>
-                    </div>
-                    <header class="modal-header">
-                        <i class="modal-heading-icon ti-bag"></i>
-                        Tickets
-                    </header>
-
-                    <div class="modal-body">
-                        <label for="ticket-quantity" class="modal-label">
-                            <i class="ti-shopping-cart"></i>
-                            Tickets, $15 per person
-                        </label>
-                        <input
-                            id="ticket-quantity"
-                            type="text"
-                            class="modal-input"
-                            placeholder="How many ?"
-                        />
-
-                        <label for="ticket-email" class="modal-label">
-                            <i class="ti-user"></i>
-                            Send to
-                        </label>
-                        <input
-                            id="ticket-email"
-                            type="email"
-                            class="modal-input"
-                            placeholder="Enter email"
-                        />
-
-                        <button id="buy-stickets">
-                            Pay
-                            <i class="ti-check"></i>
-                        </button>
-                    </div>
-                    <footer class="modal-footer">
-                        <p class="modal-help">Need <a href="#">help?</a></p>
-                    </footer>
-                </div>
             </div>
         </div>
 
